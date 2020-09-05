@@ -15,10 +15,26 @@ json形式で出力する.
 - beautifulsoup4 4.8.2
 
 ## 準備
+```sh
+git clone <this repo>
+cd <this repo>
+```
 
 - 各年度のレースIDを記述したCSVファイルをrace_idディレクトリに用意する
 
-## 出力データ について
+- 実行ファイルmain.py中のmain()内にある，変数yearに収集年度の西暦を，文字列型で指定する．
+```
+def main():
+    ...
+    year = '2020'
+```
+
+## 実行
+```sh
+python main.py
+```
+
+## 出力データの仕様
 
 - 欠損値には 0 を入れる
 
@@ -43,17 +59,22 @@ race_data_2020.json
           "斤量": 54.0
         },
         {
-            ...
+            ...(その他の競走馬データ)...
         }
       ]
     },
     {
-        ...
+        ...(その他のレースデータ)...
     }
   ]
 }
 ```
 
+### 出力例
+<https://github.com/Ran350/get-race-data/blob/master/race_data/race_data_2020.json>
+
+## 引用
+<https://db.netkeiba.com/>
 
 ## 作成者
 
