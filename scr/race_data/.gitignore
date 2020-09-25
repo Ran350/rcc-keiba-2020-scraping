@@ -1,0 +1,7 @@
+/race_data/*
+!/race_data/race_data_2021.json
+
+/race_id/*
+!/race_id/race_id2021.csv
+
+__pycache__/
