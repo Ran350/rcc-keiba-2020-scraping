@@ -31,10 +31,10 @@ python main.py
 ```
 [
     {
-        "netkeiba_id":"５桁の調教師id(文字列型)",
+        "netkeiba_id":"5桁の調教師id(文字列型)",
         "name":"調教師名",
-        "win_rate":"直近20件の勝率(小数)",
-        "rank_average":"直近20件の平均順位(小数)"
+        "win_rate":直近20件の勝率(小数),
+        "rank_average":直近20件の平均順位(小数)
     },
     {...},
     {...},
