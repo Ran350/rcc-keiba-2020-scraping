@@ -44,13 +44,13 @@ def get_jockey_name(soup):
     selector = '#db_main_box > div > div.db_head_name.fc > h1'
 
     name = soup.select_one(selector).text
+    print(name)
 
     # 不要な文字列の削除
-    name = name.replace('\n', '').replace(u'\xa0', u'')
-    try:
-        name = name[:re.search('\(', name).start()]
-    except:
-        pass
+    # 名前情報があるタグ内は "\n<名前> \n\n(<読みがな>)\n" の形式で記述されている
+    # ここから<名前>だけを取り出す
+    name = name.replace('\n', '', 1)
+    name = name[:name.find('\n')-1]
 
     return name
 
