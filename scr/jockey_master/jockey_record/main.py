@@ -30,7 +30,7 @@ import jockey
 def main():
     base_url = 'https://db.netkeiba.com/jockey/'
 
-    # id_list = ['05339', '00963', '01085']
+    # id_list = ['05339', 'z0327', 'a005b', 'a015a']    #テスト用
     # csvファイルを開いて騎手IDを取得
     with open("../jockey_id/jockey_id.csv") as f:
         for row in csv.reader(f):

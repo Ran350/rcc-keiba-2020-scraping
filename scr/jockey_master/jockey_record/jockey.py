@@ -41,16 +41,11 @@ def get_one_jockey_data(id, url):
 
 def get_jockey_name(soup):
     ## -----*----- １ページ分の騎手名を取得 -----*----- ##
-    selector = '#db_main_box > div > div.db_head_name.fc > h1'
+    name = soup.title.text
 
-    name = soup.select_one(selector).text
-
-    # 不要な文字列の削除
-    name = name.replace('\n', '').replace(u'\xa0', u'')
-    try:
-        name = name[:re.search('\(', name).start()]
-    except:
-        pass
+    # 騎手名以外の文字列の削除
+    name = name[:name.find('|') - 1]
+    # print(name)
 
     return name
 

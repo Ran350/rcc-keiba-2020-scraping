@@ -9,6 +9,7 @@ def get_html(url):
     while True:
         try:
             res = requests.get(url)
+            res.encoding = 'EUC-JP'  # 文字コード設定
             res.raise_for_status()
             sleep(0.5)  # 優しさ
             break
@@ -18,7 +19,7 @@ def get_html(url):
             sleep(1)
             if err == 10:
                 break
-    return res.content
+    return res.text
 
 
 def get_href(soup, css_selecter):

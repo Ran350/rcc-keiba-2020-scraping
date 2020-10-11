@@ -29,7 +29,7 @@ import trainer
 def main():
     base_url = 'https://db.netkeiba.com/trainer/'
 
-    # id_list = ['01163']
+    # id_list = ['01163', '05518']  # テスト用
     # csvファイルを開いて騎手IDを取得
     with open("../trainer_id/trainer_id.csv") as f:
         for row in csv.reader(f):
