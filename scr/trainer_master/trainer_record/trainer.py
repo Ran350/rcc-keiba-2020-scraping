@@ -1,6 +1,5 @@
 import scp
 from bs4 import BeautifulSoup
-import re
 
 
 def get_all_trainer_data(id_list, url):
@@ -41,16 +40,11 @@ def get_one_trainer_data(id, url):
 
 def get_trainer_name(soup):
     ## -----*----- １ページ分の調教師名を取得 -----*----- ##
-    selector = '#db_main_box > div > div.db_head_name.fc > h1'
+    name = soup.title.text
 
-    name = soup.select_one(selector).text
-
-    # 不要な文字列の削除
-    name = name.replace('\n', '').replace(u'\xa0', u'')
-    try:
-        name = name[:re.search('\(', name).start()]
-    except:
-        pass
+    # 騎手名以外の文字列の削除
+    name = name[:name.find('|') - 1]
+    # print(name)
 
     return name
 
