@@ -9,7 +9,7 @@ def get_html(url):
     while True:
         try:
             res = requests.get(url)
-            res.encoding = res.apparent_encoding  # 文字コードの特定
+            res.encoding = 'EUC-JP'  # 文字コード設定
             res.raise_for_status()
             sleep(0.5)  # 優しさ
             break
