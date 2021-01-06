@@ -1,0 +1,5 @@
+/horse_data/*
+
+/horse_id/horse_id/*.csv
+
+__pycache__
