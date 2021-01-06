@@ -2,4 +2,4 @@
 
 /horse_id/horse_id/*.csv
 
-__pycache__
+/src/__pycache__
