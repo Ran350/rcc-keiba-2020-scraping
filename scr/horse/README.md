@@ -19,7 +19,7 @@ python ./main.py
 
 ## 出力形式
 
-- 仕様 1
+- 取得失敗時は None で埋める
 - 仕様 2
 - 仕様 3
 
@@ -71,15 +71,15 @@ horse_master.json
         "trainer_id" : "01110",
         "wins" : 12,
         "win_rate" : 0.6,
-        "Rank_average" : 2.3,
+        "rank_average" : 2.55,
         "money" : 1876840000,
         "course_suitability" : 0.178571429,
         "distance_suitability" : 0.79166666666,
         "limb" : 0.17261904761,
         "growth" : 0.73809523809,
         "muddy_track_suitability" : 0.26785714285,
-        "summer_suitability" : ,
-        "winter_suitability" : ,
+        "summer_suitability" : 1,
+        "winter_suitability" : 0,
         "speed" : 16.2337662338,
         "breeding_center" : "日高町"
     },
