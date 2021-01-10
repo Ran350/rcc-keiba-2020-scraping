@@ -17,16 +17,16 @@ import hs
 
 
 def main():
-    version = '0'
+    version = '1'
     print('version: ' + version)
 
     id_list = []
 
     # csvファイルを開いて競走馬IDを取得
-    # file_name = "./../horse_id/horse_id/horse_id"+version+".csv"
-    # with open(file_name) as f:
-    #     for row in csv.reader(f):
-    #         id_list = row
+    file_name = "./../horse_id/horse_id/horse_id"+version+".csv"
+    with open(file_name) as f:
+        for row in csv.reader(f):
+            id_list = row
 
     # すべての競走馬idをリストで取得
     horse_data = get_all_horse_data(id_list)
