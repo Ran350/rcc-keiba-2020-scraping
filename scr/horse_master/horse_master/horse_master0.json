@@ -1,0 +1,23 @@
+[
+  {
+    "birthday": "2012年3月10日",
+    "breeding_center": "日高町",
+    "course_suitability": 0.17857142857142858,
+    "distance_suitability": 0.7916666666666666,
+    "growth": 0.7380952380952381,
+    "limb": 0.17261904761904762,
+    "money": 1876840000,
+    "muddy_track_suitability": 0.26785714285714285,
+    "name": "キタサンブラック",
+    "netkeiba_id": "2012102013",
+    "ped_id": "2012102013",
+    "rank_average": 2.55,
+    "sex": 0,
+    "speed": 16.451813544020787,
+    "summer_suitability": 1,
+    "trainer_id": "01110",
+    "win_rate": 0.6,
+    "wins": 12,
+    "winter_suitability": 0
+  }
+]
