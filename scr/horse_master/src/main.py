@@ -112,11 +112,11 @@ def download_html(url):
         try:
             res = requests.get(url)
             res.raise_for_status()
-            # return res.content
+            return res.content
 
             #　エンコードに失敗するなら以下を使用する
-            res.encoding = res.apparent_encoding
-            return res.text
+            # res.encoding = res.apparent_encoding
+            # return res.text
 
         except:
             print(f'{i} this page is not found')
