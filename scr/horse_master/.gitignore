@@ -1,5 +1,4 @@
-/horse_data/*
-
-/horse_id/horse_id/*.csv
-
-/src/__pycache__
+__pycache__
+*.json
+*.csv
+*.zip
