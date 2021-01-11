@@ -55,7 +55,7 @@ def extract_id(soup):
 def download_html(url):
     ## -----*----- 指定URLのHTML文字列を取得 -----*----- ##
     for i in range(10):
-        # sleep(0.1)  # 優しさ
+        sleep(3)  # 優しさ
         try:
             res = requests.get(url)
             res.raise_for_status()
@@ -63,7 +63,6 @@ def download_html(url):
 
         except:
             print(str(i) + ' this page is not found')
-            sleep(2)  # 優しさ
 
     print(url)
 

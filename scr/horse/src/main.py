@@ -108,7 +108,7 @@ def get_one_horse_data(id: list) -> dict:
 def download_html(url):
     ## -----*----- 指定URLのHTML文字列を取得 -----*----- ##
     for i in range(5):
-        sleep(0.2)  # 優しさ
+        sleep(3)  # 優しさ
         try:
             res = requests.get(url)
             res.raise_for_status()
@@ -120,7 +120,6 @@ def download_html(url):
 
         except:
             print(f'{i} this page is not found')
-            sleep(2)
 
     print(url)
 
