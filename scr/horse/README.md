@@ -2,28 +2,24 @@
 
 ## 準備
 
-horse_id ディレクトリに horse_id.csv が存在しない場合には，
-次を実行して競走馬 ID を取得してください．
+horse_id/horse_id/ ディレクトリ に horse_id1.csv が存在しない場合には，次を実行して競走馬 ID を取得してください．
 
 ```sh
-python ./horse_id/main.py
+python horse_id/main.py
 ```
+
+実行が完了すると，scr/horse/horse_id/horse_id/ ディレクトリに horse_id.csv が生成されます．
+各 horse_id.csv には，獲得賞金が多い競走馬順に，5000 件の競走馬 ID が 1 行で記述されます．
 
 ## 実行
 
 ```sh
-python ./main.py
+python src/horse/src/main.py
 ```
 
-取得に成功すると，"horse_master.json"が生成されます．
+取得に成功すると，horse_master.json が生成されます．
 
 ## 出力形式
-
-- 取得失敗時は None で埋める
-- 仕様 2
-- 仕様 3
-
-## データ構造
 
 horse_master.json
 
@@ -35,7 +31,7 @@ horse_master.json
         "birthday" : "YYYY年MM月DD日",
         "sex" : 性別(0 : 牡，0.5 : 牝，1 : セ),
         "ped_id" : "血統ID(血統マスタのid)",　　
-        "trainer_id" : 調教師ID(調教師マスタのid),
+        "trainer_id" : "10桁の調教師ID",
         "wins" : 勝数(0〜の整数),
         "win_rate" : 直近10件の1位になった率(0〜1の小数),
         "Rank_average" : 直近10件の順位平均,
@@ -56,9 +52,11 @@ horse_master.json
 ]
 ```
 
+ただし，取得失敗時，値は null で埋める
+
 ### 出力例
 
-horse_master.json
+horse_master1.json
 
 ```
 [
