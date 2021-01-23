@@ -6,8 +6,9 @@ RCC 2020 年度競馬 AI 班　スクレイピング係
 
 以下の競馬データを収集する．
 
-- レースデータ
+- 競走馬マスタ
 - 騎手マスタ
+- レースデータ
 - 調教師マスタ
 
 json 形式で出力する.
@@ -27,9 +28,10 @@ cd <this repo>
 
 ## 実行
 
-- レースデータ -> race_data/README.md
-- 騎手マスタ -> jockey_master/README.md
-- 調教師マスタ -> trainer_master/README.md
+- 競走馬マスタ -> horse/README.md
+- 騎手マスタ -> jockey/README.md
+- レースデータ -> race/README.md
+- 調教師マスタ -> trainer/README.md
 
 の指示に従って実行してください．
 
